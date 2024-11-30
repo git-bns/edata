@@ -1,0 +1,77 @@
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #665544;
+	padding: 20px;
+}
+
+.circular {
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(../res/images/devlo.jpg) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+::-webkit-input-placeholder {
+	text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	text-align: center;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+	text-align: center;
+}
+
+:-ms-input-placeholder {
+	text-align: center;
+}
+
+
+
+#tblList {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	text-align: center;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+
+#tblList th {
+	background-color:#c3dde0;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+#tblList tr {
+	background-color:#d4e3e5;
+}
+#tblList tbody tr:hover td{
+	background-color:#ffff66;
+}
+#tblList td {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+
+#emp-info
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	text-align: left;
+	border-collapse: collapse;
+}
+#emp-info td
+{
+	color: #669;
+	padding-left: 5px;
+}

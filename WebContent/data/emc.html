@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>eManagement</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/mn.css">
+<script type="text/javascript" src="../js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../js/functions.js"></script>
+</head>
+<body onload="List()">
+<center>
+<br /><br />
+<h3 style="text-align: center; font-family: Verdana;" >Employee Management</h3>
+<br /><br /><br /><br />
+<div id="data-entry">
+	<form id="frmCadastre">
+	<fieldset>
+  		<legend>Employee Information</legend>
+  		<table id="emp-info">
+  			<tr>
+				<td><label for="txtID">EmpID:</label></td><td><input type="text" id="txtID" maxlength="8" onkeypress="return isNumber(event)" /></td>
+			</tr>
+			<tr>
+				<td><label for="txtName">Name:</label></td><td><input type="text" id="txtName" maxlength="25" /></td>
+			</tr>
+			<tr>
+				<td><label for="txtPhone">Phone:</label></td><td><input type="text"	id="txtPhone" maxlength="10" onkeypress="return isNumber(event)" /></td>
+			</tr>
+			<tr>
+				<td><label for="txtEmail">Email:</label></td><td> <input type="text" id="txtEmail" maxlength="15" /></td>
+			</tr>
+			<tr>
+				<td></td><td>
+				<img  id="btnSave" style="cursor: pointer;" src="../res/icon/android/save.png"
+					 width="85" height="30"onclick="saveData()" /> 
+				<img  id="btnSave" style="cursor: pointer;" src="../res/icon/android/view.png"
+					 width="85" height="30" onclick="toggleView()" />
+				</td>
+			</tr>
+	</table>
+	</fieldset>
+	</form>
+</div>
+
+<div id="dispaly-all" style="display: none;">
+	<fieldset>
+	  		<legend>Employee Database</legend>
+		<table id="tblList"></table>
+		<br />
+		<img  id="btnSave" style="cursor: pointer;" src="../res/icon/android/entry.jpg"
+					 width="170" height="35" onclick="toggleEdit()" />
+	</fieldset>
+</div>
+
+<br /><br /><br />
+<img src="../res/icon/android/logout.jpg" width="185" height="50"  style="cursor: pointer;" onclick="logout()" />
+
+</center>
+</body>
+</html>
